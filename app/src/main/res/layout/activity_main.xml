@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F6FF"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Summary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1E88E5"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TableRow
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="#546E7A"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M Valetekhan Khamdan"
+                    android:textColor="#263238"
+                    android:textSize="14sp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <View android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginBottom="16dp"/>
+
+            <TableRow
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="#546E7A"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="khamdanvaletekhan@gmail.com"
+                    android:textColor="#263238"
+                    android:textSize="14sp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <View android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginBottom="16dp"/>
+
+            <TableRow
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textColor="#546E7A"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pelajar"
+                    android:textColor="#43A047"
+                    android:textStyle="bold|italic"
+                    android:textSize="14sp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <View android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginBottom="16dp"/>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Login"
+                    android:textColor="#546E7A"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11 April 2026 "
+                    android:textColor="#263238"
+                    android:textSize="14sp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+        </TableLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="EDIT PROFILE"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#1E88E5"
+        android:layout_marginTop="32dp"
+        app:cornerRadius="12dp"
+        android:elevation="4dp"/>
+
+</LinearLayout>
